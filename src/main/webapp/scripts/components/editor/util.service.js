@@ -143,6 +143,7 @@ angular.module('sdlctoolApp')
                     lastChanged: settings.lastChanged,
                     requirementCategories: []
                 });
+
                 angular.forEach(settings.requirements, function (requirement) {
                     angular.forEach(requirement.optionColumns, function (optColumn) {
                         angular.forEach(optColumn.content, function (content) {
@@ -164,6 +165,7 @@ angular.module('sdlctoolApp')
                                     tickets: requirement.tickets,
                                     tagInstances: requirement.tagInstances,
                                     optColumns: requirement.optionColumns,
+				    collectionInstances: requirement.collectionInstances,
                                     statusColumns: requirement.statusColumns
                                 });
                             }
@@ -182,6 +184,7 @@ angular.module('sdlctoolApp')
                             tickets: requirement.tickets,
                             tagInstances: requirement.tagInstances,
                             optColumns: requirement.optionColumns,
+			    collectionInstances: requirement.collectionInstances,
                             statusColumns: requirement.statusColumns
                         });
                         yamlExport.requirementCategories.push({
