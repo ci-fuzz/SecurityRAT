@@ -51,6 +51,10 @@
                         <goals>
                             <goal>bower</goal>
                         </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                            <arguments>install --allow-root</arguments>
+                        </configuration>
                     </execution>
 
                     <!-- Task: Running Grunt -->
