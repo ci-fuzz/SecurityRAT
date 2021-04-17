@@ -1,0 +1,148 @@
+{
+  "name": "projects/securityrat3-1cad9cfa",
+  "displayName": "securityrat3",
+  "buildScriptContent": "set -e\n\nmvn package -P prod",
+  "details": {
+    "javaDetails": {
+      "jars": [
+        "securityrat-api/target/securityrat-api-1.8.0.jar",
+        "securityrat-backend/target/securityrat-backend-1.8.0.jar",
+        "securityrat-frontend/node_modules/generator-jhipster/app/templates/gradle/wrapper/gradle-wrapper.jar",
+        "securityrat-frontend/target/securityrat-frontend-1.8.0.jar"
+      ],
+      "packages": [
+        " \u003c%=packageName%\u003e",
+        " \u003c%=packageName%\u003e.config",
+        " \u003c%=packageName%\u003e.config.metrics",
+        "\u003c%=packageName%\u003e",
+        "\u003c%=packageName%\u003e.aop",
+        "\u003c%=packageName%\u003e.aop.logging",
+        "\u003c%=packageName%\u003e.async",
+        "\u003c%=packageName%\u003e.config",
+        "\u003c%=packageName%\u003e.config.apidoc",
+        "\u003c%=packageName%\u003e.config.audit",
+        "\u003c%=packageName%\u003e.config.cassandra",
+        "\u003c%=packageName%\u003e.config.hazelcast",
+        "\u003c%=packageName%\u003e.config.locale",
+        "\u003c%=packageName%\u003e.config.metrics",
+        "\u003c%=packageName%\u003e.config.oauth2",
+        "\u003c%=packageName%\u003e.domain",
+        "\u003c%=packageName%\u003e.domain.enumeration",
+        "\u003c%=packageName%\u003e.domain.util",
+        "\u003c%=packageName%\u003e.repository",
+        "\u003c%=packageName%\u003e.repository.search",
+        "\u003c%=packageName%\u003e.security",
+        "\u003c%=packageName%\u003e.security.xauth",
+        "\u003c%=packageName%\u003e.service",
+        "\u003c%=packageName%\u003e.service.impl",
+        "\u003c%=packageName%\u003e.service.util",
+        "\u003c%=packageName%\u003e.web",
+        "\u003c%=packageName%\u003e.web.filter",
+        "\u003c%=packageName%\u003e.web.filter.gzip",
+        "\u003c%=packageName%\u003e.web.propertyeditors",
+        "\u003c%=packageName%\u003e.web.rest",
+        "\u003c%=packageName%\u003e.web.rest.dto",
+        "\u003c%=packageName%\u003e.web.rest.errors",
+        "\u003c%=packageName%\u003e.web.rest.mapper",
+        "\u003c%=packageName%\u003e.web.rest.util",
+        "\u003c%=packageName%\u003e.web.websocket",
+        "\u003c%=packageName%\u003e.web.websocket.dto",
+        "org",
+        "org.appsec",
+        "org.appsec.securityrat",
+        "org.appsec.securityrat.aop",
+        "org.appsec.securityrat.aop.logging",
+        "org.appsec.securityrat.api",
+        "org.appsec.securityrat.api.dto",
+        "org.appsec.securityrat.api.dto.rest",
+        "org.appsec.securityrat.api.dto.training",
+        "org.appsec.securityrat.api.dto.user",
+        "org.appsec.securityrat.api.endpoint",
+        "org.appsec.securityrat.api.endpoint.rest",
+        "org.appsec.securityrat.api.endpoint.training",
+        "org.appsec.securityrat.api.provider",
+        "org.appsec.securityrat.api.provider.advanced",
+        "org.appsec.securityrat.api.test",
+        "org.appsec.securityrat.api.test.mock",
+        "org.appsec.securityrat.api.test.util",
+        "org.appsec.securityrat.config",
+        "org.appsec.securityrat.config.audit",
+        "org.appsec.securityrat.domain",
+        "org.appsec.securityrat.domain.enumeration",
+        "org.appsec.securityrat.domain.util",
+        "org.appsec.securityrat.provider",
+        "org.appsec.securityrat.provider.advanced",
+        "org.appsec.securityrat.provider.frontend",
+        "org.appsec.securityrat.provider.mapper",
+        "org.appsec.securityrat.provider.mapper.frontend",
+        "org.appsec.securityrat.provider.mapper.training",
+        "org.appsec.securityrat.repository",
+        "org.appsec.securityrat.repository.search",
+        "org.appsec.securityrat.security",
+        "org.appsec.securityrat.web",
+        "org.appsec.securityrat.web.dto",
+        "org.appsec.securityrat.web.dto.importer",
+        "org.appsec.securityrat.web.endpoint",
+        "org.appsec.securityrat.web.filter"
+      ]
+    },
+    "buildSystem": "MAVEN",
+    "javaWebAppDetails": {
+      "webApplications": [
+        {
+          "applicationName": "SecurityRatApp",
+          "package": "org.appsec.securityrat",
+          "artifact": "securityrat-backend/target/securityrat-backend-1.8.0.jar",
+          "webControllerDb": {
+
+          },
+          "detectedFrameworks": [
+            "SPRING_BOOT",
+            "SPRING"
+          ]
+        }
+      ],
+      "defaultSetupRequestsFileContent": "{\"requests\":[{\"method\":\"GET\",\"uri\":\"/\",\"contentType\":\"TEXT_HTML\",\"body\":\"\",\"webControllerId\":\"\",\"headers\":{\"sec-ch-ua\":\"\\\"Google Chrome\\\";v=\\\"89\\\", \\\"Chromium\\\";v=\\\"89\\\", \\\";Not A Brand\\\";v=\\\"99\\\"\",\"sec-ch-ua-mobile\":\"?0\",\"Upgrade-Insecure-Requests\":\"1\",\"User-Agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36\",\"Accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\"}},{\"method\":\"POST\",\"uri\":\"/api/authentication\",\"contentType\":\"APPLICATION_FORM_URLENCODED\",\"body\":\"j_username=user\u0026j_password=user\u0026remember-me=true\u0026submit=Login\",\"webControllerId\":\"\",\"headers\":{\"sec-ch-ua\":\"\\\"Google Chrome\\\";v=\\\"89\\\", \\\"Chromium\\\";v=\\\"89\\\", \\\";Not A Brand\\\";v=\\\"99\\\"\",\"Accept\":\"application/json, text/plain, */*\",\"sec-ch-ua-mobile\":\"?0\",\"User-Agent\":\"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36\"}}]}",
+      "projectExceptionPolicy": {
+        "policy": [
+          {
+            "enabled": true,
+            "responsePolicy": {
+              "responseMatcher": "CODE_STARTS_WITH",
+              "code": 2
+            }
+          },
+          {
+            "enabled": true,
+            "responsePolicy": {
+              "responseMatcher": "CODE_STARTS_WITH",
+              "code": 4
+            }
+          },
+          {
+            "enabled": true,
+            "responsePolicy": {
+              "code": 302
+            }
+          },
+          {
+            "enabled": true,
+            "exceptionPolicy": {
+              "Exception": "java.lang.IllegalArgumentException",
+              "exceptionStrategy": "STACKTRACE_CONTAINS",
+              "content": "org.springframework.web.util.UriComponentsBuilder"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "projectEnvironment": {
+    "dockerBuild": {
+      "name": "gcr.io/code-intelligence/securityrat_build:v2"
+    },
+    "dockerRun": {
+      "name": "gcr.io/code-intelligence/securityrat_build:v2"
+    }
+  }
+}
